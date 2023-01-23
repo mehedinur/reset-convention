@@ -1,0 +1,120 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.card-title {
+    padding: 20px 20px 4px 20px;
+}
+
+.card-rd {
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+}
+
+.card-rd p {
+    padding: 20px 20px 0px 20px;
+}
+
+.others-info {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    padding: 0px 20px 4px 20px;
+}
+
+.Plan {
+    background-color: #f8b5e0;
+    color: blue;
+    border-radius: 20px;
+    border: 1px solid #f8b5e0;
+    /* padding: 8px 12px 8px 12px; */
+    width: 20vh;
+    height: 6vh;
+    margin: 40px 0px 20px 75px;
+}
+
+.plan-bg-hover:hover {
+    background-color: rgb(103, 103, 243);
+    cursor: pointer;
+    color: white;
+}
+
+.plan-hover:hover {
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.badg {
+    background-color: #E21717;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+.cards-clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 60px;
+}
+
+.carrd {
+    box-shadow: 3px 7px 5px 7px lightgray;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.card-img img {
+    margin-left: 35%;
+}
+
+.img-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.img-title h4 {
+    color: lightslategray;
+}
+
+@media only screen and (max-width: 992px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carrd {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .carrd {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
